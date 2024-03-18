@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #555;
+    margin: 30px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    position: fixed;
+    width: 250px;   /* storlek på vår nav bar */
+    height: 100vh;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column; /* konfiguerar så att elementen startar från toppen o staplas ned */
+    align-items: center; /* centrerar våra flikar */
+    border: 3px solid #222; /* sätter en fin kant runt vår navbar */
+    border-radius: 10px; /*kanterna runt vår navbar blir runda */
+}
+
+nav a {
+    color: #aaaaaa; /*färgen på vår text*/
+    text-decoration: none; /* ser till så flikarna inte är upplagda med något*/
+}
+
+nav ul li {
+    margin: 30px; /* avstånd mellan flikarna */
+}
+
+nav ul {
+    list-style-type: none; /* tar bort punktmarkeringen vid flikarna */
+}
+
+nav a:hover {
+    color: hsl(283, 100%, 62%)  /*färg när markören är över flikarna*/
+}
+
+.portrait{
+    max-width: 150px;
+    height: auto;
+    border: 3px solid #222;
+    border-radius: 10px;
+    transform: scale(0.8);
+    margin: 20px auto;
+    display: block;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+
+}
+
+footer {
+    position: sticky;
+}
