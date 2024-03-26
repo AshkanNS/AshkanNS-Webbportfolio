@@ -1,82 +1,135 @@
 body {
     font-family: sans-serif;
-    background-color: #555;
-    margin: 30px;
+    background-color: #0e050f;
+    margin: 50px;   /* vår marginal i avstånd runt hela vår body */
     padding: 0;
+    background: #110817;
+    background-image: radial-gradient(circle at center, transparent 50%, #2b1639 100%); /*sätter en cirkel i bakrunden så att de blir en skinande effekt*/
+    background-attachment: fixed;   /* ser till så att bakrunden är fast */
 }
 
 nav {
-    position: fixed;
-    width: 250px;   /* storlek på vår nav bar */
-    height: 100vh;
-    background-color: #202020;
+    position: fixed;    /*fäster vår navbar så att den inte flyttar sig*/
+    width: 250px;   /* bred på vår nav bar */
+    height: 90vh;   /* höjd på vår nav bar */
+    background-color: #111;
     display: flex;
     flex-direction: column; /* konfiguerar så att elementen startar från toppen o staplas ned */
     align-items: center; /* centrerar våra flikar */
-    border: 3px solid #222; /* sätter en fin kant runt vår navbar */
-    border-radius: 10px; /*kanterna runt vår navbar blir runda */
+    border: 1px solid #333; /* sätter en fin kant runt vår navbar med färg */
+    border-radius:5px; /*kanterna runt vår navbar blir runda */
 }
 
 nav a {
     color: #aaaaaa; /*färgen på vår text*/
     font-size:large;
-    text-decoration: none; /* ser till så flikarna inte är upplagda med något*/
+    text-decoration: none; /* ser till så rubrikerna inte är understrukna*/
     display: flex;
     align-items: center;
 }
 
-nav a .material-symbols-outlined {
-    margin-right: 10px ;
+nav a .material-symbols-outlined, nav a.button {
+    margin-right: 10px ;    /* avstånden mellan loggan och rubriken */
 }
 
 nav ul {
-    list-style-type: none; /* tar bort punktmarkeringen vid flikarna */
-    padding: 0px;
+    list-style-type: none; /* tar bort punktmarkeringen vid rubrikerna */
+    padding: 0px;   
 }
 
 nav ul li {
-    margin: 30px; /* avstånd mellan flikarna */
-}
-
-nav a:hover {
-    color: hsl(280, 60%, 40%)  /*färg när markören är över flikarna*/
+    margin: 30px; /* avståndet mellan flikarna*/
 }
 
 .portrait{
     max-width: 150px;
     height: auto;
-    border: 3px solid #222;
-    border-radius: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
     margin: 40px 0;
+    margin-bottom: 0;
     display: block;
+}
+
+.name-title h1 {
+    color: hsl(280, 60%, 40%);
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 0;
+    display: block;
+}
+
+.name-title p {
+    color: hsl(280, 60%, 40%);
+    font-size: medium;
+    margin-top: 2px;
 }
 
 main {
     font-family: sans-serif;
-    background-color: #c9c9c9;
+    background-color: #111;
     padding: 20px;
-    margin-left: 250px;
-    height: 100vh;
+    margin-left: 280px;
+    height: auto;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-size: large;
+    overflow: hidden;
+    position: relative;
+}
 
+main h2 {
+    margin-bottom: 0;
+}
+
+main p {
+    margin-top: 2px;
 }
 
 #contact-form {
     max-width: 400px;
     margin: auto;
-    padding: 20px;
-    background: #333;
+    padding: 10px;
+    background: #222;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin-left: 0px;
 }
 
 .form-group input, .form-group textarea {
+    font-size: medium;
     width: 100%;
     padding: 10px;
-    border: 2px solid #555;
-    border-radius: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
     box-sizing: border-box;
+    color: #111;
+    resize: none;
 }
 
-button[type="submit"]:hover {
-    background-color: hsl(280, 60%, 40%);
+footer {
+    font-family: sans-serif;
+    background-color: #111;
+    margin-top: 30px;
+    margin-left: 280px;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials a {
+    font-size: 35px;
+    color: #aaaaaa;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+#skillsbanner {
+    position: absolute;
+    white-space: nowrap;
 }
