@@ -10,14 +10,17 @@ body {
 
 nav {
     position: fixed;    /*fäster vår navbar så att den inte flyttar sig*/
-    width: 250px;   /* bred på vår nav bar */
-    height: 90vh;   /* höjd på vår nav bar */
+    width: 20vw;   /* bred på vår nav bar */
+    min-width: 200px;
+    height: calc(100vh - 100px);   /* höjd på vår nav bar */
     background-color: #111;
     display: flex;
     flex-direction: column; /* konfiguerar så att elementen startar från toppen o staplas ned */
     align-items: center; /* centrerar våra flikar */
     border: 1px solid #333; /* sätter en fin kant runt vår navbar med färg */
     border-radius:5px; /*kanterna runt vår navbar blir runda */
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 nav a {
@@ -69,14 +72,15 @@ main {
     font-family: sans-serif;
     background-color: #111;
     padding: 20px;
-    margin-left: 280px;
+    margin-left: calc(20vw + 60px);
+    margin-top: 50px;
     height: auto;
     color: white;
     border-radius: 5px;
     border: 1px solid #333;
     font-size: large;
-    overflow: hidden;
-    position: relative;
+    position: relative; /**/
+    overflow: hidden;   /*ser till så att bannern håller sig inom vår main sektion*/
 }
 
 main h2 {
@@ -112,14 +116,15 @@ main p {
 footer {
     font-family: sans-serif;
     background-color: #111;
+    padding: 20px;
     margin-top: 30px;
-    margin-left: 280px;
-    height: 70px;
+    margin-left: calc(20vw + 60px);
     border-radius: 5px;
     border: 1px solid #333;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .socials a {
@@ -130,6 +135,7 @@ footer {
 }
 
 #skillsbanner {
-    position: absolute;
-    white-space: nowrap;
+    white-space: nowrap;    /*ser till så att all text går i en endaste linje*/
+    position: absolute;     /*gör så vi kontrollerar banners position*/
+    will-change: transform; /*optimerar animationen*/
 }
