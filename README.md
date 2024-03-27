@@ -12,8 +12,8 @@ Some more details of my work:
 - Direct links to detailed projects on GitHub
 - Contact form for inquiries
 
-- Book Review Platform**: A platform where users can review books and share opinions.
-- GDP Capita Project**: An analytical tool that visualizes GDP per capita data across different countries.
+- Book Review Platform: A platform where users can review books and share opinions.
+- GDP Capita Project: An analytical tool that visualizes GDP per capita data across different countries.
 
 Thank you for visiting my portfolio!
 
