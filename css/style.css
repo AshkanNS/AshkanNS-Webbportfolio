@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    background-color: #0e050f;
+    font-family: sans-serif;    /*den font vi vill använda*/
+    background-color: #0e050f;  
     margin: 50px;   /* vår marginal i avstånd runt hela vår body */
     padding: 0;
     background: #110817;
@@ -88,7 +88,25 @@ main h2 {
 }
 
 main p {
-    margin-top: 2px;
+    margin-top: 0;
+}
+
+main p a {
+    color: white;
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.portfolio-image {
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #333;
+    border-radius: 5px;
 }
 
 #contact-form {

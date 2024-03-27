@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav a');
     const footerLinks = document.querySelectorAll('footer a');
     const sendMessageButton = document.querySelector('button[type="submit"]');
+    const paraLinks = document.querySelectorAll('main p a');
 
     // Funktion för att lägga till hover-effekt
     const addHoverEffect = (links) => {
@@ -20,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Lägg till hover-effekter på länkar
+    // Lägg till hover-effekter på de länkar som vi bifogat i toppen av scriptet
     addHoverEffect(navLinks);
     addHoverEffect(footerLinks);
+    addHoverEffect(paraLinks);
 
     // Lägg till hover-effekt på "Send Message"-knappen
     if (sendMessageButton) {
